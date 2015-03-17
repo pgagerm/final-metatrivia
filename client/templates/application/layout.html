@@ -1,0 +1,18 @@
+<template name="layout">
+  <div class="container">
+    {{> header}}
+    <div id="main">
+
+    	
+		
+		{{#if currentUser}}
+      <!-- automatically render whichever template corresponds to the current route -->
+    		{{> yield}}
+		
+		{{else}}
+			<h1 class="instruction-login">Please login to play</h1>
+		{{/if}}
+
+    </div>
+  </div>
+</template>
