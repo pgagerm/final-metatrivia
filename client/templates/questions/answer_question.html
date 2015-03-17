@@ -1,14 +1,15 @@
 <template name="answerQuestion">
 
-    <p>
-        <a href="#" class="back">Back</a> |
-        <a href="#" class="next">Next</a>
-    </p>
+    <div class="jumbotron question">{{question}}</div>
+    <div class="message"></div>
 
-    <h1>{{question}}</h1>
     {{#each answers}}
         <div class="answer">
             <a href="##">{{text}}</a>
+<!-- make a click .answer event handler like the .start on metatrivia.js -->
         </div>
     {{/each}}
+
+    <p><a href="#" class="btn btn-default next" role="button">Next question &raquo;</a></p>
+
 </template>
