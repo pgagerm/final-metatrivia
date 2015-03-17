@@ -1,0 +1,14 @@
+<template name="answerQuestion">
+
+    <p>
+        <a href="#" class="back">Back</a> |
+        <a href="#" class="next">Next</a>
+    </p>
+
+    <h1>{{question}}</h1>
+    {{#each answers}}
+        <div class="answer">
+            <a href="##">{{text}}</a>
+        </div>
+    {{/each}}
+</template>
