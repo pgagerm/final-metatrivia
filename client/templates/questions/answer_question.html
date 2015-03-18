@@ -4,10 +4,8 @@
     <div class="message"></div>
 
     {{#each answers}}
-        <div class="answer">
-            <a href="##">{{text}}</a>
+        <button class="btn btn-primary btn-lg answer" href="#" id="answer{{index}}">{{text}}</button>
 <!-- make a click .answer event handler like the .start on metatrivia.js -->
-        </div>
     {{/each}}
 
     <p><a href="#" class="btn btn-default next" role="button">Next question &raquo;</a></p>
