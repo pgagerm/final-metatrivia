@@ -1,10 +1,14 @@
 <template name="results">
 	
-	<p>You got {{results}} correct!</p>
+	<div class="jumbotron">
+	      <div class="container">
+	        <h1 class="metatrivia-padding">You got {{results}} correct!</h1>
+	        <p><a class="btn btn-primary btn-lg start" href="#" role="button">Start a game &raquo;</a></p>
+	        <p><a class="btn btn-primary btn-lg" href="/add" role="button">Submit a question &raquo;</a></p>
+	      </div>
+	    </div>
 
 </template>
 
-<!-- create a query that checks to look in the userQuestion collection and see if
-grab the userId give me the number of true correct answers (.count())
-if statements which will give you a different message depending 
+<!-- make if statements which will give you a different message depending 
 on how many questions you got right -->
