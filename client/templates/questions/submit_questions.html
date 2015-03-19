@@ -45,10 +45,14 @@
 
         <p>
           <div class="current-questions">
-              <h2>Quiz Questions</h2>
+              <h2>Question Admin</h2>
               <ol>
                   {{#each questions}}
-                      <li><a href="/quiz/{{_id}}">{{question}}</a></li>
+                      <li>
+                        {{question}}
+                        (<a href="/quiz/{{_id}}">Edit</a> |
+                        <a href="#" id="{{_id}}" class="approve">Approve</a>)
+                      </li>
                   {{/each}}
               </ol>
           </div>
