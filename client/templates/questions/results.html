@@ -1,14 +1,9 @@
 <template name="results">
-	
-	<div class="jumbotron">
-	      <div class="container">
-	        <h1 class="metatrivia-padding">You got {{results}} correct!</h1>
-	        <p><a class="btn btn-primary btn-lg start" href="#" role="button">Start a game &raquo;</a></p>
-	        <p><a class="btn btn-primary btn-lg" href="/add" role="button">Submit a question &raquo;</a></p>
-	      </div>
-	    </div>
-
+	<div class="col-md-6 col-md-offset-3">
+      <div class="container">
+        <h1 class="metatrivia-padding">You got {{results}} correct!</h1>
+        <p><a class="btn btn-primary btn-block btn-lg start" href="#" role="button">Start a game &raquo;</a></p>
+        <p><a class="btn btn-primary btn-block btn-lg" href="/add" role="button">Submit a question &raquo;</a></p>
+      </div>
+	</div>
 </template>
-
-<!-- make if statements which will give you a different message depending 
-on how many questions you got right -->

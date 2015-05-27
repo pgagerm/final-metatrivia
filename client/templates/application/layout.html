@@ -1,16 +1,13 @@
 <template name="layout">
   <div class="container">
     {{> header}}
-    <div id="main">
+    	<div class="jumbotron center-title">
+			<div class="row">
 
-      
-    
-    {{#if currentUser}}
-      <!-- automatically render whichever template corresponds to the current route -->
-        {{> yield}}
-   {{/if}}
-   <h1 class='instruction-login'>{{welcome}}</h1>
-
-    </div>
-  </div>
+      		<!-- automatically render whichever template corresponds to the current route -->
+        	{{> yield}}
+		
+			</div>
+    	</div>
+  	</div>
 </template>
