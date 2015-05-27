@@ -5,8 +5,8 @@
 //     	question : "Which is correct?",
 //     	answers  : [
 //     		{text: "!DOCTYPE html",  isAnswer : true},
-//        		{text: "DOCTYPE! html",  isAnswer : false},
-//        		{text: "DOCTYPE! html!", isAnswer : false},
+//        	{text: "DOCTYPE! html",  isAnswer : false},
+//        	{text: "DOCTYPE! html!", isAnswer : false},
 //         	{text: "DOCTYPE html!",  isAnswer : false}
 //     	],
 //     	createdAt: new Date(),
